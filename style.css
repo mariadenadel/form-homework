@@ -73,3 +73,15 @@ fieldset {
 label {
   margin: 10px 0;
 }
+
+input {
+  outline: none;
+}
+
+input:focus:invalid {
+  border: 2px solid red;
+}
+
+input:valid {
+  border: 2px solid green;
+}
