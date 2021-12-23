@@ -33,10 +33,10 @@
           <input type="email" name="email" id="email">
           <br>
           <label for="password">Password</label><br>
-          <input type="password" name="password" id="password">
+          <input type="password" name="password" id="password" minlength="5">
           <br>
           <label for="phone">Phone Number</label><br>
-          <input type="tel" name="phone" id="phone">
+          <input type="number" name="phone" id="phone" pattern="[0-9\/]*">
           <br>
           <fieldset>
             <legend>Full Name</legend>
@@ -82,7 +82,7 @@
             <label for="city"></label>
             <input type="text" name="state" id="state" placeholder="State">
             <input type="text" name="city" id="city" placeholder="City">
-            <input type="text" pattern="[0-9]{5}" placeholder="Postal code">
+            <input type="number" pattern="[0-9]{5}" placeholder="Postal code" min=10000>
             <input type="text" name="street" id="street" placeholder="Street">
           </fieldset>
           <label for="color">Pick your favorite color:</label>
@@ -106,7 +106,7 @@
               <option value="Business">Business 👔</option>
           </select>
           <label for="story">Describe yourself</label>
-          <textarea id="story" name="story" rows="5" cols="33"> I’m the best person in the world...</textarea>
+          <textarea id="story" name="story" rows="5" cols="33" placeholder=" I’m the best person in the world..."></textarea>
         </div>
       </div>
     </form>
