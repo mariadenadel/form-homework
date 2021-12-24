@@ -49,32 +49,32 @@
           <input type="range" name="range" id="range" required>
           <p>Select your languages</p>
           <div>
-            <input type="checkbox" id="scales" name="scales" checked>
-            <label for="scales">English</label>
+            <input type="checkbox" id="english" name="english" value="english" checked>
+            <label for="english">English</label>
           </div>
           <div>
-            <input type="checkbox" id="horns" name="horns" checked>
-            <label for="horns">Ukrainian</label>
+            <input type="checkbox" id="ukrainian" name="ukrainian" value="ukrainian" checked>
+            <label for="ukrainian">Ukrainian</label>
           </div>
           <div>
-            <input type="checkbox" id="horns" name="horns">
-            <label for="horns">Spanish</label>
+            <input type="checkbox" id="spanish" name="spanish" value="spanish">
+            <label for="spanish">Spanish</label>
           </div>
           <p>Hourly rate</p>
           <div>
-            <input type="radio" id="huey" name="drone" value="huey" checked>
+            <input type="radio" id="huey" name="drone" value="$10-20" checked>
             <label for="huey">$10-20</label>
           </div>
           <div>
-            <input type="radio" id="dewey" name="drone" value="dewey">
+            <input type="radio" id="dewey" name="drone" value="$20-40">
             <label for="dewey">$20-40</label>
           </div>
           <div>
-            <input type="radio" id="louie" name="drone" value="louie">
+            <input type="radio" id="louie" name="drone" value="$40-80">
             <label for="louie">$40-80</label>
           </div>
           <div>
-            <input type="radio" id="louie" name="drone" value="louie">
+            <input type="radio" id="louie" name="drone" value=">$80">
             <label for="louie"> >$80</label>
           </div>
           <fieldset>
@@ -111,4 +111,19 @@
     </form>
   </div>
 </body>
+<script>
+
+  const submitButton = document.querySelector(".confirm-button");
+
+  submitButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    let allInputs = [...document.querySelectorAll('input')]
+    // allInputs.map((input) => console.log(input.value)) with map function
+    let count = element.length
+    for (let i = 0; i < count; i++) {
+      console.log(element[i].value)
+    }
+  });
+
+</script>
 </html>
