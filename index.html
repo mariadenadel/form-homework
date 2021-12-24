@@ -113,16 +113,10 @@
 </body>
 <script>
 
-  const submitButton = document.querySelector(".confirm-button");
-
-  submitButton.addEventListener("click", function(event) {
-    event.preventDefault();
-    let allInputs = [...document.querySelectorAll('input')]
-    // allInputs.map((input) => console.log(input.value)) with map function
-    let count = element.length
-    for (let i = 0; i < count; i++) {
-      console.log(element[i].value)
-    }
+  document.querySelector("form").addEventListener("submit", function (event) {
+    event.preventDefault()
+    let array = [...document.querySelector("form").elements]
+    array.map((input) => console.log(input.value))
   });
 
 </script>
